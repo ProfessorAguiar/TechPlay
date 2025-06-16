@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import logo from'./assets/Logo.png'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={{fontSize:"30px"}}>TechPlay</Text>
+      <Image source={logo} style={{width:'300px', height:'100px'}}/>
+      {/* <Text style={{fontSize:"30px"}}>TechPlay</Text> */}
       <TouchableOpacity style={styles.botao}>Comprar</TouchableOpacity>
       <StatusBar style="auto" />
     </View>
@@ -14,7 +16,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#33fb22',
     alignItems: 'center',
     justifyContent: 'center',
   },
